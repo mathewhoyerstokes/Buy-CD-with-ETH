@@ -13,8 +13,8 @@ contract PrismSale {
   constructor() {
     totalSales = 0;
     maxSales = 100;
-    owner = 0xcdCe6d39D1cc702ADD7a46f0C32fCe52fCc2CF52;
-    charity = 0x50Bc73Aa1e40844E0A484360A16a267724DA21a5;
+    owner = msg.sender;
+    charity = 0x095f1fD53A56C01c76A2a56B7273995Ce915d8C4;
   }
 
   function canBuy() public view returns (bool) {

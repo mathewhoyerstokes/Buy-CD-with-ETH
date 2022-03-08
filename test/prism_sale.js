@@ -1,7 +1,6 @@
 const PrismSale = artifacts.require("PrismSale");
-
+// test will not work as the owner and charity have been changes on deployment of contract to ropsten //
 // i want to test if the payment is split up correctly to the owner and to the chariy//
-
 contract("PrismSale", function (accounts) {
 
   it("should assert true", async function () {
